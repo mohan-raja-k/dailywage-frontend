@@ -10,7 +10,7 @@ function Jobs({ token }) {
     }).then(response => {
       setJobs(response.data);
     });
-  }, []);
+  }, [token]);
 
   return (
     <div>
