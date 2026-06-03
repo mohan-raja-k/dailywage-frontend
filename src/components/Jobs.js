@@ -5,7 +5,7 @@ function Jobs({ token }) {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    axios.get('https://dailywage-connect-production.up.railway.app/Job/getJob', {
+    axios.get('https://dailywage-connect-production-b013.up.railway.app/Job/getJob', {
       headers: { Authorization: `Bearer ${token}` }
     }).then(response => {
       setJobs(response.data);

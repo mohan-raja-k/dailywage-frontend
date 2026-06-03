@@ -6,7 +6,7 @@ function Login({ setToken }) {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    axios.post('https://dailywage-connect-production.up.railway.app/Auth/login', {
+    axios.post('https://dailywage-connect-production-b013.up.railway.app/Auth/login', {
       userEmail: email,
       userPassword: password
     }).then(response => {
